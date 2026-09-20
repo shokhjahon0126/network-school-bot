@@ -8,3 +8,6 @@ class User(models.Model):
 
     class Meta:
         unique_together = ["chat_id","username"]
+
+    def __str__(self):
+        return f"{self.username}"
