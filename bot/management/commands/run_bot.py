@@ -1,6 +1,7 @@
 from django.core.management.base import BaseCommand
-
+from ...handlers.main import main
 
 class Command(BaseCommand):
     def handle(self, *args, **options):
-        self.stdout.write("salom dunyo")
+        main()
+        self.stdout.write("Bot to'xtadi!")
