@@ -5,7 +5,7 @@ from decouple import config
 
 from bot.models import User
 
-from bot.handlers.buttons.start import menu_buttons
+from bot.handlers.buttons.start import menu_buttons, branches_buttons
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
 
@@ -20,9 +20,15 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
         url=config('MARKAZ_URL')
     )
 
+    branches = []
+    if data.status_code == 200:
+        branches = data.json().get('branches', [])
+        context.bot_data["branches"] = branches
+
+    reply_markup = branches_buttons(branches) if branches else menu_buttons()
 
     await update.message.reply_text(
-        "Salom botga xush kelibsiz!",
-        reply_markup=menu_buttons()
+        "👋 Salom, botga xush kelibsiz!\n\n🏢 Iltimos, filiallardan birini tanlang:",
+        reply_markup=reply_markup
     )
 
