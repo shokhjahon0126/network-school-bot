@@ -4,7 +4,7 @@ from telegram import  Update
 from telegram.ext import Application, CommandHandler,  MessageHandler, filters
 from decouple import config
 from bot.handlers.commands import start
-from bot.handlers.messages import locations
+from bot.handlers.messages import locations,qobilyat
 
 
 def build_application() -> Application:
@@ -12,14 +12,8 @@ def build_application() -> Application:
     application = Application.builder().token(config("TOKEN")).build()
 
     application.add_handler(CommandHandler("start", start))
-    application.add_handler(
-        MessageHandler(
-            filters=filters.Text('📍 Manzil'),
-            callback=locations
-        ),
-      
-    )
-
+    application.add_handler(MessageHandler(filters=filters.Text('📍 Manzil'),callback=locations))
+    application.add_handler(MessageHandler(filters=filters.Text("🧠 Qobiliyatimni aniqlash"),callback=qobilyat))
     return application
 
 
