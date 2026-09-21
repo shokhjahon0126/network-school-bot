@@ -1,0 +1,557 @@
+{
+    "test": {
+        "id": 1,
+        "title": "Sizga qaysi IT yo‘nalishi mos?",
+        "description": "Qiziqish va fikrlash uslubingiz asosida sizga mos bo‘lishi mumkin bo‘lgan yo‘nalishlarni aniqlang.",
+        "questions": [
+            {
+                "id": 1,
+                "question": "Sizga yangi loyiha berilsa, eng avvalo nimaga e’tibor berasiz?",
+                "options": [
+                    {
+                        "id": 1,
+                        "text": "🎨 Uning chiroyli va qulay ko‘rinishiga",
+                        "weights": {
+                            "frontend": 4,
+                            "backend": 1,
+                            "data_science": 0,
+                            "cybersecurity": 0,
+                            "mobile": 3
+                        }
+                    },
+                    {
+                        "id": 2,
+                        "text": "⚙️ Uning ichki qanday ishlashiga",
+                        "weights": {
+                            "frontend": 1,
+                            "backend": 4,
+                            "data_science": 2,
+                            "cybersecurity": 3,
+                            "mobile": 2
+                        }
+                    },
+                    {
+                        "id": 3,
+                        "text": "📊 Undagi ma’lumotlarga va raqamlarga",
+                        "weights": {
+                            "frontend": 0,
+                            "backend": 1,
+                            "data_science": 5,
+                            "cybersecurity": 1,
+                            "mobile": 0
+                        }
+                    },
+                    {
+                        "id": 4,
+                        "text": "🔐 Unda qanday xatolar yoki xavflar bo‘lishi mumkinligiga",
+                        "weights": {
+                            "frontend": 0,
+                            "backend": 2,
+                            "data_science": 1,
+                            "cybersecurity": 5,
+                            "mobile": 0
+                        }
+                    },
+                    {
+                        "id": 5,
+                        "text": "📱 Uni telefonda qanday ishlatish mumkinligiga",
+                        "weights": {
+                            "frontend": 2,
+                            "backend": 1,
+                            "data_science": 0,
+                            "cybersecurity": 0,
+                            "mobile": 5
+                        }
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "question": "Quyidagilardan qaysi biri sizga qiziqroq?",
+                "options": [
+                    {
+                        "id": 1,
+                        "text": "🌐 Saytning ko‘rinishi va interfeysi",
+                        "weights": {
+                            "frontend": 5,
+                            "backend": 0,
+                            "data_science": 0,
+                            "cybersecurity": 0,
+                            "mobile": 3
+                        }
+                    },
+                    {
+                        "id": 2,
+                        "text": "🧩 Murakkab tizim va API yaratish",
+                        "weights": {
+                            "frontend": 1,
+                            "backend": 5,
+                            "data_science": 1,
+                            "cybersecurity": 3,
+                            "mobile": 2
+                        }
+                    },
+                    {
+                        "id": 3,
+                        "text": "📈 Ma’lumotlarni o‘rganish va xulosa chiqarish",
+                        "weights": {
+                            "frontend": 0,
+                            "backend": 1,
+                            "data_science": 5,
+                            "cybersecurity": 1,
+                            "mobile": 0
+                        }
+                    },
+                    {
+                        "id": 4,
+                        "text": "🛡 Tizimdagi zaifliklarni aniqlash",
+                        "weights": {
+                            "frontend": 0,
+                            "backend": 2,
+                            "data_science": 0,
+                            "cybersecurity": 5,
+                            "mobile": 1
+                        }
+                    },
+                    {
+                        "id": 5,
+                        "text": "📱 Mobil ilova yaratish",
+                        "weights": {
+                            "frontend": 2,
+                            "backend": 1,
+                            "data_science": 0,
+                            "cybersecurity": 0,
+                            "mobile": 5
+                        }
+                    }
+                ]
+            },
+            {
+                "id": 3,
+                "question": "Muammoni hal qilishda siz qaysi usulni ko‘proq yoqtirasiz?",
+                "options": [
+                    {
+                        "id": 1,
+                        "text": "💡 Kreativ va turli xil yechimlarni sinab ko‘rish",
+                        "weights": {
+                            "frontend": 4,
+                            "backend": 2,
+                            "data_science": 1,
+                            "cybersecurity": 1,
+                            "mobile": 4
+                        }
+                    },
+                    {
+                        "id": 2,
+                        "text": "🧠 Muammoni bosqichma-bosqich mantiqiy yechish",
+                        "weights": {
+                            "frontend": 1,
+                            "backend": 5,
+                            "data_science": 3,
+                            "cybersecurity": 4,
+                            "mobile": 2
+                        }
+                    },
+                    {
+                        "id": 3,
+                        "text": "📊 Ma’lumotlarni solishtirib xulosa qilish",
+                        "weights": {
+                            "frontend": 0,
+                            "backend": 1,
+                            "data_science": 5,
+                            "cybersecurity": 2,
+                            "mobile": 0
+                        }
+                    },
+                    {
+                        "id": 4,
+                        "text": "🔎 Xatoni topib, uning asl sababini aniqlash",
+                        "weights": {
+                            "frontend": 1,
+                            "backend": 4,
+                            "data_science": 2,
+                            "cybersecurity": 5,
+                            "mobile": 1
+                        }
+                    }
+                ]
+            },
+            {
+                "id": 4,
+                "question": "Raqamlar va matematikaga munosabatingiz qanday?",
+                "options": [
+                    {
+                        "id": 1,
+                        "text": "🔥 Juda yoqadi",
+                        "weights": {
+                            "frontend": 0,
+                            "backend": 2,
+                            "data_science": 5,
+                            "cybersecurity": 2,
+                            "mobile": 1
+                        }
+                    },
+                    {
+                        "id": 2,
+                        "text": "🙂 Yomon emas",
+                        "weights": {
+                            "frontend": 1,
+                            "backend": 2,
+                            "data_science": 3,
+                            "cybersecurity": 2,
+                            "mobile": 1
+                        }
+                    },
+                    {
+                        "id": 3,
+                        "text": "😐 Unchalik yoqmaydi",
+                        "weights": {
+                            "frontend": 2,
+                            "backend": 1,
+                            "data_science": 0,
+                            "cybersecurity": 1,
+                            "mobile": 2
+                        }
+                    }
+                ]
+            },
+            {
+                "id": 5,
+                "question": "Biror saytda xato topib qolsangiz, nima qilasiz?",
+                "options": [
+                    {
+                        "id": 1,
+                        "text": "🎨 Ko‘rinishini yaxshilashga harakat qilaman",
+                        "weights": {
+                            "frontend": 4,
+                            "backend": 1,
+                            "data_science": 0,
+                            "cybersecurity": 0,
+                            "mobile": 3
+                        }
+                    },
+                    {
+                        "id": 2,
+                        "text": "⚙️ Kodda nima xato bo‘lganini tushunishga harakat qilaman",
+                        "weights": {
+                            "frontend": 2,
+                            "backend": 5,
+                            "data_science": 1,
+                            "cybersecurity": 3,
+                            "mobile": 2
+                        }
+                    },
+                    {
+                        "id": 3,
+                        "text": "🔐 Bu xato xavfsizlik muammosiga olib keladimi, deb tekshiraman",
+                        "weights": {
+                            "frontend": 0,
+                            "backend": 2,
+                            "data_science": 0,
+                            "cybersecurity": 5,
+                            "mobile": 1
+                        }
+                    }
+                ]
+            },
+            {
+                "id": 6,
+                "question": "Sizga qaysi natijani ko‘rish ko‘proq yoqadi?",
+                "options": [
+                    {
+                        "id": 1,
+                        "text": "🎨 Chiroyli interfeys paydo bo‘lishini",
+                        "weights": {
+                            "frontend": 5,
+                            "backend": 0,
+                            "data_science": 0,
+                            "cybersecurity": 0,
+                            "mobile": 3
+                        }
+                    },
+                    {
+                        "id": 2,
+                        "text": "⚡ Tizimning tez va to‘g‘ri ishlashini",
+                        "weights": {
+                            "frontend": 1,
+                            "backend": 5,
+                            "data_science": 2,
+                            "cybersecurity": 3,
+                            "mobile": 2
+                        }
+                    },
+                    {
+                        "id": 3,
+                        "text": "📊 Ma’lumotlardan qiziqarli natija olishni",
+                        "weights": {
+                            "frontend": 0,
+                            "backend": 1,
+                            "data_science": 5,
+                            "cybersecurity": 1,
+                            "mobile": 0
+                        }
+                    },
+                    {
+                        "id": 4,
+                        "text": "🛡 Tizimni himoyalangan holatga keltirishni",
+                        "weights": {
+                            "frontend": 0,
+                            "backend": 2,
+                            "data_science": 1,
+                            "cybersecurity": 5,
+                            "mobile": 0
+                        }
+                    },
+                    {
+                        "id": 5,
+                        "text": "📱 Telefonda ishlaydigan ilova yaratishni",
+                        "weights": {
+                            "frontend": 2,
+                            "backend": 1,
+                            "data_science": 0,
+                            "cybersecurity": 0,
+                            "mobile": 5
+                        }
+                    }
+                ]
+            },
+            {
+                "id": 7,
+                "question": "Sizga uzoq vaqt bir muammo ustida ishlash qanday tuyuladi?",
+                "options": [
+                    {
+                        "id": 1,
+                        "text": "🔥 Qiziq, yechmaguncha davom etaman",
+                        "weights": {
+                            "frontend": 1,
+                            "backend": 4,
+                            "data_science": 3,
+                            "cybersecurity": 5,
+                            "mobile": 2
+                        }
+                    },
+                    {
+                        "id": 2,
+                        "text": "🙂 Vaziyatga qarab",
+                        "weights": {
+                            "frontend": 2,
+                            "backend": 2,
+                            "data_science": 2,
+                            "cybersecurity": 2,
+                            "mobile": 2
+                        }
+                    },
+                    {
+                        "id": 3,
+                        "text": "⚡ Tezroq natija ko‘rishni xohlayman",
+                        "weights": {
+                            "frontend": 4,
+                            "backend": 1,
+                            "data_science": 1,
+                            "cybersecurity": 1,
+                            "mobile": 4
+                        }
+                    }
+                ]
+            },
+            {
+                "id": 8,
+                "question": "Qaysi faoliyat sizga ko‘proq mos keladi?",
+                "options": [
+                    {
+                        "id": 1,
+                        "text": "🎨 Dizayn va foydalanuvchi interfeysi bilan ishlash",
+                        "weights": {
+                            "frontend": 5,
+                            "backend": 0,
+                            "data_science": 0,
+                            "cybersecurity": 0,
+                            "mobile": 3
+                        }
+                    },
+                    {
+                        "id": 2,
+                        "text": "⚙️ Tizimlar, serverlar va API bilan ishlash",
+                        "weights": {
+                            "frontend": 0,
+                            "backend": 5,
+                            "data_science": 1,
+                            "cybersecurity": 4,
+                            "mobile": 2
+                        }
+                    },
+                    {
+                        "id": 3,
+                        "text": "📊 Grafiklar, statistikalar va ma’lumotlar bilan ishlash",
+                        "weights": {
+                            "frontend": 0,
+                            "backend": 1,
+                            "data_science": 5,
+                            "cybersecurity": 1,
+                            "mobile": 0
+                        }
+                    },
+                    {
+                        "id": 4,
+                        "text": "🔐 Tizimlarni tekshirish va himoyalash",
+                        "weights": {
+                            "frontend": 0,
+                            "backend": 2,
+                            "data_science": 1,
+                            "cybersecurity": 5,
+                            "mobile": 1
+                        }
+                    },
+                    {
+                        "id": 5,
+                        "text": "📱 Mobil mahsulotlar yaratish",
+                        "weights": {
+                            "frontend": 2,
+                            "backend": 1,
+                            "data_science": 0,
+                            "cybersecurity": 0,
+                            "mobile": 5
+                        }
+                    }
+                ]
+            },
+            {
+                "id": 9,
+                "question": "Yangi texnologiyani o‘rganganingizda sizga nima ko‘proq qiziq?",
+                "options": [
+                    {
+                        "id": 1,
+                        "text": "👀 Natijasini darhol ko‘rish",
+                        "weights": {
+                            "frontend": 4,
+                            "backend": 1,
+                            "data_science": 1,
+                            "cybersecurity": 1,
+                            "mobile": 4
+                        }
+                    },
+                    {
+                        "id": 2,
+                        "text": "🧠 U qanday ishlashini chuqur tushunish",
+                        "weights": {
+                            "frontend": 1,
+                            "backend": 5,
+                            "data_science": 3,
+                            "cybersecurity": 4,
+                            "mobile": 2
+                        }
+                    },
+                    {
+                        "id": 3,
+                        "text": "📈 U orqali qanday ma’lumot olish mumkinligi",
+                        "weights": {
+                            "frontend": 0,
+                            "backend": 1,
+                            "data_science": 5,
+                            "cybersecurity": 1,
+                            "mobile": 0
+                        }
+                    },
+                    {
+                        "id": 4,
+                        "text": "🛡 Undagi xavf va zaifliklarni o‘rganish",
+                        "weights": {
+                            "frontend": 0,
+                            "backend": 2,
+                            "data_science": 1,
+                            "cybersecurity": 5,
+                            "mobile": 1
+                        }
+                    }
+                ]
+            },
+            {
+                "id": 10,
+                "question": "Tasavvur qiling, sizga yangi startup loyihasi berildi. Qaysi vazifani tanlaysiz?",
+                "options": [
+                    {
+                        "id": 1,
+                        "text": "🎨 Saytning dizayni va interfeysini yaratish",
+                        "weights": {
+                            "frontend": 5,
+                            "backend": 0,
+                            "data_science": 0,
+                            "cybersecurity": 0,
+                            "mobile": 3
+                        }
+                    },
+                    {
+                        "id": 2,
+                        "text": "⚙️ Server, API va ma’lumotlar bazasini qurish",
+                        "weights": {
+                            "frontend": 0,
+                            "backend": 5,
+                            "data_science": 2,
+                            "cybersecurity": 3,
+                            "mobile": 2
+                        }
+                    },
+                    {
+                        "id": 3,
+                        "text": "📊 Foydalanuvchilar ma’lumotlarini tahlil qilish",
+                        "weights": {
+                            "frontend": 0,
+                            "backend": 1,
+                            "data_science": 5,
+                            "cybersecurity": 1,
+                            "mobile": 0
+                        }
+                    },
+                    {
+                        "id": 4,
+                        "text": "🔐 Tizim xavfsizligini tekshirish",
+                        "weights": {
+                            "frontend": 0,
+                            "backend": 2,
+                            "data_science": 1,
+                            "cybersecurity": 5,
+                            "mobile": 1
+                        }
+                    },
+                    {
+                        "id": 5,
+                        "text": "📱 Android yoki iOS ilovasini yaratish",
+                        "weights": {
+                            "frontend": 2,
+                            "backend": 1,
+                            "data_science": 0,
+                            "cybersecurity": 0,
+                            "mobile": 5
+                        }
+                    }
+                ]
+            }
+        ],
+        "result": {
+            "title": "🎯 Sizga mos yo‘nalishlar",
+            "show_top": 3,
+            "courses": [
+                {
+                    "slug": "frontend",
+                    "title": "Frontend Development"
+                },
+                {
+                    "slug": "backend",
+                    "title": "Backend Development"
+                },
+                {
+                    "slug": "data-science",
+                    "title": "Data Science"
+                },
+                {
+                    "slug": "cybersecurity",
+                    "title": "Cybersecurity"
+                },
+                {
+                    "slug": "mobile",
+                    "title": "Mobile Development"
+                }
+            ]
+        }
+    }
+}
