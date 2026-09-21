@@ -24,7 +24,6 @@ async def select_branch(update: Update, context: ContextTypes.DEFAULT_TYPE) -> N
             "name": branch_name,
         }
     
-    print(context.user_data)
     await update.message.reply_text(
         f"✅ <b>{branch_name}</b> filiali tanlandi!\n\nKerakli bo‘limni tanlang:",
         reply_markup=menu_buttons(),
