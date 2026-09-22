@@ -8,11 +8,11 @@ def menu_buttons():
             KeyboardButton("📚 Kurslar"),
         ],
         [
-            KeyboardButton("👨‍🏫 O‘qituvchilar"),
+            # KeyboardButton("👨‍🏫 O‘qituvchilar"),
             KeyboardButton("🧠 Qobiliyatimni aniqlash"),
+            KeyboardButton("📝 Kursga yozilish"),
         ],
         [
-            KeyboardButton("📝 Kursga yozilish"),
         ],
     ]
 
