@@ -1,10 +1,18 @@
 
-
-from telegram import  Update
+from telegram import Update
 from telegram.ext import Application, CommandHandler, MessageHandler, CallbackQueryHandler, filters
 from decouple import config
 from bot.handlers.commands import start
-from bot.handlers.messages import locations, qobilyat, select_branch, quiz_callback
+from bot.handlers.messages import (
+    locations,
+    qobilyat,
+    select_branch,
+    quiz_callback,
+    show_courses,
+    course_detail_callback,
+    courses_list_callback,
+    get_enrollment_conversation_handler,
+)
 
 
 def build_application() -> Application:
@@ -12,11 +20,16 @@ def build_application() -> Application:
     application = Application.builder().token(config("TOKEN")).build()
 
     application.add_handler(CommandHandler("start", start))
+    application.add_handler(get_enrollment_conversation_handler())
     application.add_handler(CallbackQueryHandler(quiz_callback, pattern=r"^quiz_"))
+    application.add_handler(CallbackQueryHandler(course_detail_callback, pattern=r"^course_info_"))
+    application.add_handler(CallbackQueryHandler(courses_list_callback, pattern=r"^courses_list$"))
     application.add_handler(MessageHandler(filters=filters.Regex(r"^🏢"), callback=select_branch))
     application.add_handler(MessageHandler(filters=filters.Text('📍 Manzil'), callback=locations))
+    application.add_handler(MessageHandler(filters=filters.Text("📚 Kurslar"), callback=show_courses))
     application.add_handler(MessageHandler(filters=filters.Text("🧠 Qobiliyatimni aniqlash"), callback=qobilyat))
     return application
+
 
 
 def main() -> None:

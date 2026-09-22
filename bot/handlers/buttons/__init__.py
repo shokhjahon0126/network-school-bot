@@ -1,1 +1,2 @@
-from . import *
+from .start import *
+from .courses import *
